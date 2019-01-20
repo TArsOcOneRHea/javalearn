@@ -1,6 +1,7 @@
 package Homework.hw_1_func;
 
 import java.util.Scanner;
+
 /*
 3. Написать программу, вычисляющую корни квадратного уравнения вида ax² + bx + c = 0, где a, b и c -
 вводимые пользователем из консоли данные. Учитывать только реальные корни
@@ -29,19 +30,22 @@ public class ex_3 {
             System.out.println("В квадратном уравнении два корня");
             System.out.println("x1 = " + x1 + ", x2 = " + x2);
         } else if (isZero(D)) {
-            double x = ((double)-b / (double) (2 * a));
+            double x = ((double) -b / (double) (2 * a));
             System.out.println("В квадратном уравнении один корень");
             System.out.println("x = " + x);
         } else {
             System.out.println("В квадратном уравнении нет корней");
         }
     }
+
     private static boolean isPositive(int n) {
         return n > 0;
     }
+
     private static boolean isZero(int n) {
         return n == 0;
     }
+
     private static int discriminant(int a, int b, int c) {
         return (b * b - 4 * a * c);
     }
