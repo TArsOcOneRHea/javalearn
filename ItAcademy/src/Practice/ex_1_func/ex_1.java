@@ -2,7 +2,9 @@ package Practice.ex_1_func;
 
 import java.util.Scanner;
 import java.lang.String;
-
+/*
+Задачка с порами года (if-else && switch)
+ */
 public class ex_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
