@@ -8,7 +8,7 @@ import java.lang.String;
 public class ex_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите число месяца: ");
+        System.out.println("Введите число месяца : ");
         int month = sc.nextInt();
 
         switch (month) {
