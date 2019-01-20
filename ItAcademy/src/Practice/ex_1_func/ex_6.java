@@ -13,9 +13,9 @@ public class ex_6 {
         int second_number = sc.nextInt();
 
         if (first_number > second_number) {
-            System.out.println("Наибольшее из них - " + first_number);
+            System.out.println("Наибольшее из них -  " + first_number);
         } else {
-            System.out.println("Наибольшее из них - " + second_number);
+            System.out.println("Наибольшее из них -  " + second_number);
         }
 
     }
