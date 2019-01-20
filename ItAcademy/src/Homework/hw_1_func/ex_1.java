@@ -64,6 +64,5 @@ public class ex_1 {
                 }
         }
         return days;
-
     }
 }
