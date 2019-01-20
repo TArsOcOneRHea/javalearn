@@ -1,4 +1,4 @@
-package Homework.hw_1_func.hw_2_iter.md;
+package hw_2_iter;
 
 import java.util.Scanner;
 
