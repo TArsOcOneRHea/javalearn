@@ -1,5 +1,8 @@
 package Practice.ex_3_arrays;
-
+/*
+Напишите программу, заносящую в массив первые 100 натуральных чисел,
+делящихся на 13 или на 17, и печатающую его.
+ */
 public class ex_2 {
     public static void main(String[] args) {
         int[] array = new int[100];
