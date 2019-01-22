@@ -16,6 +16,7 @@ public class ex_2_cycle {
     private static void fibonacci(int number){
         int ft1 = 0;
         int sc2 = 1;
+        System.out.print(sc2 + " ");
         int summFibonacci;
         for (int i = 0; i < number; i++){
             summFibonacci = ft1 + sc2;
