@@ -23,6 +23,5 @@ public class ex_4 {
         char P = patronymic.charAt(0);
         String s3 = P + ".";
         return (s1 + s2 + s3).toUpperCase();
-
     }
 }
