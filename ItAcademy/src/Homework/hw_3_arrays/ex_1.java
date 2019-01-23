@@ -1,5 +1,8 @@
 package Homework.hw_3_arrays;
-
+/*
+1. Напишите программу, которая циклически сдвигает элементы
+массива вправо на одну позицию, и печатает результат.
+ */
 public class ex_1 {
     public static void main(String[] args) {
         int[] array = new int[10];
