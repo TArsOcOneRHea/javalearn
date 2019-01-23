@@ -1,4 +1,4 @@
-package hw_2_iter;
+package Homework.hw_2_iter;
 
 import java.util.Scanner;
 
