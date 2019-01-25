@@ -7,7 +7,7 @@ public class Time {
 
     public Time(int allSeconds){
         int sec = seconds % 3600;
-        int min = ((seconds - sec) % 60);
+        int min = (seconds / 60) % 60;
         int hrs = seconds / 3600;
     }
 
