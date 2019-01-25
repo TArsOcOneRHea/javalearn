@@ -11,7 +11,10 @@ public class ex_7 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число:");
         int number = sc.nextInt();
-
-        System.out.println(number * number * number);
+        System.out.println(cube(number));
+    }
+    private static int cube(int number){
+        int cube = number * number * number;
+        return cube;
     }
 }
