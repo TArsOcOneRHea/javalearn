@@ -16,7 +16,10 @@ public class ex_3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите год: ");
         int year = sc.nextInt();
+        checkYear(year);
+    }
 
+    private static void checkYear(int year) {
         if (year % 4 == 0) {
             if ((year % 100 != 0) || (year % 400 == 0)) {
                 System.out.println("Високосный");
@@ -24,6 +27,5 @@ public class ex_3 {
         } else {
             System.out.println("Не високосный");
         }
-
     }
 }

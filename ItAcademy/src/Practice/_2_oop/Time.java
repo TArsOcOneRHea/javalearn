@@ -1,4 +1,4 @@
-package Practice._2_oop.ex_1_class_and_encapsulation;
+package Practice._2_oop;
 
 public class Time {
     int seconds;
