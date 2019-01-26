@@ -9,14 +9,17 @@ public class ex_6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите 2-а числа для сравнения: ");
-        int first_number = sc.nextInt();
-        int second_number = sc.nextInt();
+        int firstNumber = sc.nextInt();
+        int secondNumber = sc.nextInt();
 
-        if (first_number > second_number) {
-            System.out.println("Наибольшее из них -  " + first_number);
+        compareTwoDigit(firstNumber, secondNumber);
+    }
+
+    private static void compareTwoDigit(int firstNumber, int secondNumber) {
+        if (firstNumber > secondNumber) {
+            System.out.println("Наибольшее из них -  " + firstNumber);
         } else {
-            System.out.println("Наибольшее из них -  " + second_number);
+            System.out.println("Наибольшее из них -  " + secondNumber);
         }
-
     }
 }
