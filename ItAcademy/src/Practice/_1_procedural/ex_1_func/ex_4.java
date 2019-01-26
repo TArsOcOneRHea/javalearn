@@ -1,4 +1,4 @@
-package Practice.ex_1_func;
+package Practice._1_procedural.ex_1_func;
 
 import java.util.Scanner;
 /*

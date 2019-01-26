@@ -1,4 +1,4 @@
-package Practice.ex_4_string;
+package Practice._1_procedural.ex_4_string;
 
 import java.util.Scanner;
 

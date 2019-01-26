@@ -1,4 +1,4 @@
-package Practice.ex_3_arrays;
+package Practice._1_procedural.ex_3_arrays;
 /*
 Напишите программу, заносящую в массив первые 100 натуральных чисел,
 делящихся на 13 или на 17, и печатающую его.

@@ -1,4 +1,4 @@
-package Practice.ex_3_arrays;
+package Practice._1_procedural.ex_3_arrays;
 
 /*
 1. Напишите программу, которая печатает массив сначала в обычном порядке,

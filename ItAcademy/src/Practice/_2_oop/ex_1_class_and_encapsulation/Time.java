@@ -1,4 +1,4 @@
-package Practice._2_oop;
+package Practice._2_oop.ex_1_class_and_encapsulation;
 
 public class Time {
     int seconds;
@@ -16,7 +16,7 @@ public class Time {
         this.minutes = minutes;
         this.hours = hours;
     }
-    public static void printReselt{
-        System.out.println(hours + " " + minutes + " " + seconds);
-    }
+//    public static void printReselt{
+//        System.out.println(hours + " " + minutes + " " + seconds);
+//    }
 }
