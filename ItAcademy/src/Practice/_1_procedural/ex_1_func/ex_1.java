@@ -11,6 +11,10 @@ public class ex_1 {
         System.out.println("Введите число месяца : ");
         int month = sc.nextInt();
 
+        checkMonth(month);
+    }
+
+    private static void checkMonth(int month) {
         switch (month) {
             case 1:
                 System.out.println("January");

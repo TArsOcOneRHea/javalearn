@@ -11,16 +11,20 @@ public class ex_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите 2-а слова для сравнения: ");
-        String first_word  = sc.nextLine();
-        String second_word = sc.nextLine();
+        String firstWord  = sc.nextLine();
+        String secondWord = sc.nextLine();
 
-        if (first_word.equals(second_word)){
+        compareTwoWords(firstWord, secondWord);
+    }
+
+    private static void compareTwoWords(String firstWord, String secondWord) {
+        if (firstWord.equals(secondWord)){
             System.out.println("Отлично! Слова одинаковы.");
         }
-        else if (first_word.equalsIgnoreCase(second_word)){
+        else if (firstWord.equalsIgnoreCase(secondWord)){
             System.out.println("Хорошо. Почти одинаковы");
         }
-        else if (first_word.length() == second_word.length()){
+        else if (firstWord.length() == secondWord.length()){
             System.out.println("Ну, хотя бы они одной длины");
         }
         else {
