@@ -11,13 +11,13 @@ public class ex_2_recursion {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число:");
         int number = sc.nextInt();
-//        fibonacci(number);
+        System.out.println(fibonacci(number));
     }
 
-//    protected static fibonacci(int number) {
-//        if (number == 1) return 1;
-//        if (number == 2) return 1;
-//        return fibonacci(number - 1) + fibonacci(number - 2);
-//    }
+    public static int fibonacci(int number) {
+        if (number == 0) return 1;
+        if (number == 1) return 1;
+        return fibonacci(number - 1) + fibonacci(number - 2);
+    }
 }
 
