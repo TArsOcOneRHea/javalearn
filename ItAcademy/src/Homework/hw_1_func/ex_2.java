@@ -20,7 +20,6 @@ public class ex_2 {
         int e = sc.nextInt();
         int f = sc.nextInt();
 
-
         checkTheCapacityOfHouses(a, b, c, d, e, f);
     }
 
