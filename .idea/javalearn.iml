@@ -6,10 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ItAcademy/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/.idea" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ItAcademy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ItAcademy/production" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ItAcademy/src/Homework" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ItAcademy/src/Practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ItAcademy" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
