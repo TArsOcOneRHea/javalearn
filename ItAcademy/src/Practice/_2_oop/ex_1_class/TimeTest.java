@@ -1,9 +1,9 @@
-package Practice._2_oop.ex_1_class_and_encapsulation;
+package _2_oop.ex_1_class;
 
 public class TimeTest {
     public static void main(String[] args) {
-        Time time = new Time(3758, 10289, 24);
-        Time time1 = new Time(3700);
+        Time time = new Time(3758978, 101389, 356);
+        Time time1 = new Time(37056860);
         System.out.println(time);
         System.out.println(time1);
     }

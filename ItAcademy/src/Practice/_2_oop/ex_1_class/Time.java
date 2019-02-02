@@ -1,4 +1,4 @@
-package Practice._2_oop.ex_1_class_and_encapsulation;
+package _2_oop.ex_1_class;
 
 /*
 Создать класс, описывающий промежуток времени. Сам промежуток времени должен задаваться тремя свойствами: секундами,
@@ -12,6 +12,30 @@ public class Time {
     private int hours;
     private int minutes;
     private int seconds;
+
+    public void setSeconds(int seconds){
+        this.seconds = seconds;
+    }
+
+    public int getSeconds() {
+        return seconds;
+    }
+
+    public void setMinutes(int minutes) {
+        this.minutes = minutes;
+    }
+
+    public int getMinutes() {
+        return minutes;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+
+    public int getHours() {
+        return hours;
+    }
 
     protected Time(int seconds, int minutes, int hours) {
         int sec = seconds % 60;
@@ -28,12 +52,13 @@ public class Time {
     }
 
     protected Time(int allSeconds) {
-        int sec = (allSeconds % 3600) % 60;
-        int min = (allSeconds / 3600);
-        int hrs = (allSeconds % 3600) / 60;
+        int sec = allSeconds % 60;
+        int m = (allSeconds - sec) / 60;
+        int min = ((m + minutes) % 60);
+        int h = hours + ((m + minutes - min) / 60);
         this.seconds = sec;
         this.minutes = min;
-        this.hours = hrs;
+        this.hours = h;
     }
 
     @Override
