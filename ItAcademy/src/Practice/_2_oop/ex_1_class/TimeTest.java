@@ -1,4 +1,4 @@
-package _2_oop.ex_1_class;
+package Practice._2_oop.ex_1_class;
 
 public class TimeTest {
     public static void main(String[] args) {
