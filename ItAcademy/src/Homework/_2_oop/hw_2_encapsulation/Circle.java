@@ -20,13 +20,13 @@ public class Circle extends Point {
 
     public double square(){
         System.out.print("Area of a circle - ");
-        double square = Math.pow(getRadius(),2) * 3.14;
+        double square = Math.pow(getRadius(),2) * Math.PI;
         return square;
     }
 
     public double length(){
         System.out.print("Circumference - ");
-        double length = getRadius() * 2 * 3.14;
+        double length = getRadius() * 2 * Math.PI;
         return length;
     }
 }
