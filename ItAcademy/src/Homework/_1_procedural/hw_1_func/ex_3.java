@@ -1,4 +1,4 @@
-package Homework.hw_1_func;
+package Homework._1_procedural.hw_1_func;
 
 import java.util.Scanner;
 

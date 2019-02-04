@@ -1,4 +1,4 @@
-package Homework.hw_3_arrays;
+package Homework._1_procedural.hw_3_arrays;
 /*
 1. Напишите программу, которая циклически сдвигает элементы
 массива вправо на одну позицию, и печатает результат.
