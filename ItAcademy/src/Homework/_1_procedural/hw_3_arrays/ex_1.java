@@ -5,23 +5,28 @@ package Homework._1_procedural.hw_3_arrays;
  */
 public class ex_1 {
     public static void main(String[] args) {
-        int[] array = new int[10];
-        before_transposition(array);
-//        after_transposition(array);
+        int[] oldArray = new int[10];
+        beforeTransposition(oldArray);
+        System.out.println();
+        int[] newArray = afterTransposition(oldArray);
+        printArray(newArray);
     }
-    public static void  before_transposition(int[] array){
+    private static void  beforeTransposition(int[] array){
         for (int i = 0; i < array.length; i++) {
-            array[i] = i + 1;
-            System.out.print(i + " ");
+            array[i] = (int) (Math.random() * 10 + 1);
+            System.out.print(array[i] + " ");
         }
     }
-//    public static void after_transposition(int[] array ){
-//        int i = 0;
-//        int b = 3;
-//
-//        int tmp = a;
-//        a = b;
-//        b = tmp;
-//
-//    }
+     private static int[] afterTransposition(int[] array ){
+        int[] tempArray = new int[array.length];
+         for (int j = 0; j < array.length - 1; j++){
+             tempArray[j + 1] = array[j];
+         }
+         tempArray[0] = array[array.length - 1];
+         return tempArray;
+    }
+    private static void printArray(int[] array){
+        for (int i : array)
+            System.out.print(i + " ");
+    }
 }
