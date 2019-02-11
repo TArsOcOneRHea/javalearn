@@ -10,9 +10,19 @@ import org.junit.Test;
 public class PairTest {
     @Test
     public void getMaxTest() throws Exception {
-        MaxMin<Integer> integerMaxMin = new MaxMin<>(15, 25);
+        MaxMin<Integer> integerMaxMin = new MaxMin<>(12, 25);
         Assert.assertEquals(15,(long)integerMaxMin.max());
-
-
     }
+    @Test
+    public void getNull() throws Exception {
+        MaxMin<Integer> integerMaxMin = new MaxMin<>(null, 25);
+        Assert.assertNull(integerMaxMin);
+    }
+    @Test
+    public void formatTemp() throws Exception {
+        MaxMin<Integer> integerMaxMin = new MaxMin<>(null, 25);
+        Assert.fail(String.valueOf(integerMaxMin));
+    }
+
+
 }
