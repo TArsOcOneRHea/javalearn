@@ -8,7 +8,8 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        File file = new File("F:\\Разное\\Рассказы.  Дневник SYSадмина.txth");
+        File file = new File("F:\\Разное\\Рассказы.  Дневник SYSадмина.txt");
+        System.out.println(file.getName());
         BufferedReader fin = null;
         try {
             fin = new BufferedReader(new FileReader(file));
@@ -16,8 +17,8 @@ public class Main {
             System.err.println("FILE NOT FOUND!!!");
         }
         String line;
-        System.out.println(file.getName());
         try {
+            assert fin != null;
             while ((line = fin.readLine()) != null)
                 System.out.println(line);
         } catch (NullPointerException exception) {
