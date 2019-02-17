@@ -7,12 +7,21 @@ import java.io.*;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        File f = new File("E:\\text.txt");
-        BufferedReader fin = new BufferedReader(new FileReader(f));
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        File file = new File("F:\\Разное\\Рассказы.  Дневник SYSадмина.txth");
+        BufferedReader fin = null;
+        try {
+            fin = new BufferedReader(new FileReader(file));
+        } catch (FileNotFoundException exception) {
+            System.err.println("FILE NOT FOUND!!!");
+        }
         String line;
-        System.out.println(f.getName());
-        while ((line = fin.readLine()) != null)
-            System.out.println(line);
+        System.out.println(file.getName());
+        try {
+            while ((line = fin.readLine()) != null)
+                System.out.println(line);
+        } catch (NullPointerException exception) {
+            System.err.println("NULLLLLLLL!!");
+        }
     }
 }
