@@ -8,7 +8,8 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        File file = new File("F:\\Разное\\Рассказы.  Дневник SYSадмина.txt");
+//        File file = new File("F:\\Разное\\Рассказы.  Дневник SYSадмина.txt");
+        File file = new File("E:\\text.txt");
         System.out.println(file.getName());
         BufferedReader fin = null;
         try {
