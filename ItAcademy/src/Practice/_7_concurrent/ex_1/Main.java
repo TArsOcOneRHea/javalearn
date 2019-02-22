@@ -1,4 +1,4 @@
-package Practice._7_concurrent;
+package Practice._7_concurrent.ex_1;
 
 /**
  * Напишите программу, которая создает Thread. Используйте атрибуты по умолчанию.
