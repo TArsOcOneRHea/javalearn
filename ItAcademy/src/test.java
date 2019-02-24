@@ -40,8 +40,8 @@ public class test {
     }
     private static void laggingStudents(int[] marks){
         int summ = 0;
-        for (int i = 0; i < marks.length; i++) {
-            if (marks[i] <= 3){
+        for (int mark : marks) {
+            if (mark <= 3) {
                 summ = summ + 1;
             }
         }
