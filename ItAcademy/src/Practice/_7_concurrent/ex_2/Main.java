@@ -15,7 +15,7 @@ public class Main {
 
     private static void MainThread() throws InterruptedException {
         for (int i = 0; i < 10; i++){
-            System.out.println("Main text");
+            System.out.println("Test text");
             Thread.sleep(1000);
         }
     }

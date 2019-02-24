@@ -7,7 +7,7 @@ package Practice._7_concurrent.ex_1;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 10; i++){
-            System.out.println("Main text");
+            System.out.println("Test text");
             Thread.sleep(1000);
         }
         MyRunnable runnable = new MyRunnable("Thread text");
