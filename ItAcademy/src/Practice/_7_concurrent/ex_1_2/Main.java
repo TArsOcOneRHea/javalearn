@@ -32,7 +32,7 @@ public class Main {
         }
     }
 
-    public static class MyRunnable implements Runnable {
+    private static class MyRunnable implements Runnable {
 
         final String letter;
 
