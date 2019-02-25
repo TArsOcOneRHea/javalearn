@@ -26,7 +26,7 @@ public class Main {
         thread4.join();
     }
 
-    public static class MyRunnable implements Runnable{
+    private static class MyRunnable implements Runnable{
 
         final String letter;
 
