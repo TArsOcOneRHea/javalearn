@@ -12,6 +12,10 @@ public class Main {
         Thread thread2 = new Thread(new MyRunnable("Thread text2"));
         Thread thread3 = new Thread(new MyRunnable("Thread text3"));
         Thread thread4 = new Thread(new MyRunnable("Thread text4"));
+        MyThread(thread1, thread2, thread3, thread4);
+    }
+
+    private synchronized static void MyThread(Thread thread1, Thread thread2, Thread thread3, Thread thread4) throws InterruptedException {
         thread1.start();
         thread2.start();
         thread3.start();
@@ -20,16 +24,8 @@ public class Main {
         thread2.join();
         thread3.join();
         thread4.join();
-
-//        public synchronized (thread1){
-//            thread1.start();
-//            thread2.start();
-//            thread3.start();
-//            thread4.start();
-//        }
-
-
     }
+
     public static class MyRunnable implements Runnable{
         final String letter;
 
