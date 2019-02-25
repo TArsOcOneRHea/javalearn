@@ -27,6 +27,7 @@ public class Main {
     }
 
     public static class MyRunnable implements Runnable{
+
         final String letter;
 
         MyRunnable(String letter) {
