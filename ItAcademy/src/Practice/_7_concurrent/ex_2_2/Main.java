@@ -15,7 +15,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         AddString addString = new AddString();
-        new Thread(new Runnable() {
+        Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 while (true){
@@ -26,7 +26,10 @@ public class Main {
                     }
                 }
             }
-        }).start();
+        });
+
+        thread.start();
+
         while (true){
             int i = scanner.nextInt();
             addString.addNumber(i);

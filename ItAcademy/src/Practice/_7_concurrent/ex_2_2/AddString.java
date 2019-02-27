@@ -17,13 +17,13 @@ public class AddString {
 
     private List<Integer> numbers = new ArrayList<>();
 
-    void addNumber(int number) {
+    public void addNumber(int number) {
         synchronized (monitor) {
             numbers.add(number);
         }
     }
 
-    void sortNumbers() {
+    public void sortNumbers() {
         synchronized (monitor) {
             numbers.sort(Comparator.naturalOrder());
             System.out.println(numbers);
