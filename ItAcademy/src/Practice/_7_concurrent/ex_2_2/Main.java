@@ -1,9 +1,6 @@
 package Practice._7_concurrent.ex_2_2;
 
-import java.util.*;
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.Scanner;
 
 /**
  * Родительская нить программы должна считывать вводимые пользователем строки и помещать их в
@@ -16,18 +13,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> integers = new ArrayList<>(Arrays.asList(1, 2, 3, 65, 34, 7777, 4));
-        ReentrantLock reentrantLock = new ReentrantLock();
-        ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
-//        new Thread(()
-
-
-//        List<String> stringLinkedList = new LinkedList<>();
-
         Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
+        AddString addString = new AddString();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true){
+                    try {
+                        Thread.sleep(5000);
+                    addString.sortNumbers();
+                    } catch (InterruptedException e) {
+                    }
+                }
+            }
+        }).start();
+        while (true){
+            int i = scanner.nextInt();
+            addString.addNumber(i);
+        }
     }
-
-
 }
 
