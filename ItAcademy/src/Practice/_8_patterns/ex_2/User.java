@@ -1,7 +1,7 @@
 package Practice._8_patterns.ex_2;
 
 /**
- * Created by user on 11.03.2019.
+ * Created by user on 13.03.2019.
  */
 public class User {
 }

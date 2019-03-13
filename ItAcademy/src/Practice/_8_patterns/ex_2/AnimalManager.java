@@ -1,4 +1,4 @@
-package Practice._8_patterns.ex_2.ex_2_1;
+package Practice._8_patterns.ex_2;
 
 import java.util.List;
 
