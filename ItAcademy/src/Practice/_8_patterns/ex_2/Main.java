@@ -18,5 +18,8 @@ public class Main {
         animalManager.forEach(new Bark());
         animalManager.forEach(new LayDown());
 
+        Facade facade = new Facade();
+        facade.printRelativesByAnimal(user1, dog1);
+
     }
 }

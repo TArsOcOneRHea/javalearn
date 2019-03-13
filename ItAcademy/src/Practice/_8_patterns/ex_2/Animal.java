@@ -12,6 +12,10 @@ public class Animal {
         this.owner = owner;
     }
 
+    public User getOwner() {
+        return owner;
+    }
+
     public void startBarking() {
         System.out.println("Bark-Bark!!!");
     }
