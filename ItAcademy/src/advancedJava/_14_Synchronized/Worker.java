@@ -23,6 +23,7 @@ public class Worker {
                     e.printStackTrace();
                 }
                 list1.add(random.nextInt(100));
+
             }
         }
     }
